@@ -16,14 +16,14 @@
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 
-<body class="pages">
+<body class="pages-one">
     <header class="header">
         <!-- Loogo and menu nav -->
         <div class="container main-nav">
             <nav class="nav  main-nav">
                 <a class="nav-logo link" href="./index.html">Web<span class="nav-logo-letters">Studio</span></a>
                 <ul class="nav-list list">
-                    <li class="nav-item"><a class="nav-link link" href="./index.html">Studio</a></li>
+                    <li class="nav-item"><a class="nav-link link border-link-nav" href="./index.html">Studio</a></li>
                     <li class="nav-item"><a class="nav-link link" href="./portfolio.html">Portfolio</a></li>
                     <li class="nav-item"><a class="nav-link link" href="">Contacts</a></li>
                 </ul>
@@ -44,7 +44,7 @@
         <section class="hero-style">
             <div class="container">
                 <h1 class="hero-title">Effective Solutions for Your Business</h1>
-                <button type="button" class="hero-buton">Order Service</button>
+                <button data-modal-open type="button" class="hero-buton">Order Service</button>
             </div>
         </section>
         <!-- Advantages -->
@@ -395,6 +395,17 @@
             </div>
         </div>
     </footer>
+    <!-- Backdrop -->
+    <div data-modal class="backdrop is-hidden">
+        <div class="modal">
+            <button data-modal-close type="button" class="modal-close-btn">
+                <svg class="modal-close-icon" width="8" height="8">
+                    <use href="./images/sprite.svg#modal-close"></use>
+                </svg>
+            </button>
+        </div>
+    </div>
+    <script src="./js/modal.js"></script>
 </body>
 
 </html>
